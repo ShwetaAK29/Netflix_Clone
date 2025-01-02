@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    font-family:montserrat,serif;
+}
+body{
+
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: lightcyan;
+    background:linear-gradient(to left,black,transparent),url(bgimg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top-section{
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+        margin-left: 50px;
+        height: 40%;
+    }
+    .top-right{
+        select{
+            width:140px ;
+            height: 40px;
+            background: none;
+            border-radius: 7px;
+            color: #ffff;
+            text-align: center ;
+            option{
+                color: black;
+            }
+        }
+        form{
+            display: inline;
+            button{
+                width:140px ;
+                color: #ffff;
+                height: 40px;
+                background-color: rgb(211, 13, 13);
+                border:none;
+                border-radius: 7px;
+            }
+        }
+        button:hover{
+            transform: translate(-3px,-3px);
+            transition: all .3s linear;
+        } 
+
+    }
+    svg{
+        position: relative;
+        left: 30px;
+        color: aliceblue;
+    }  
+    
+    
+    
+}
+
+.home-content{
+    height: 60vh;
+    width: 700px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    gap: 15px;
+    h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .get_started{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        input{
+            height:37px;
+            width: 60%;
+            background: transparent;
+            border: white 1px solid;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+        }
+       
+        button{
+            height: 55px;
+            width:140px ;
+            color: #ffff;
+            height: 40px;
+            background-color: rgb(211, 13, 13);
+            border:none;
+            border-radius: 7px;
+        }
+        button:hover{
+            transform: translate(-3px,-3px);
+            transition: all .3s linear;
+            background-color: rgb(181, 12, 12);
+
+        } 
+    }
+
+}
+
+
+
+
+
+
+
+.sign-in{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(to left,black,transparent),url(bgimg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    form{
+        height: 80vh;
+        width: 450px;
+        background: rgb(33,33,33,0.05); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:15px;
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        color: #ffff;
+        input{
+            height: 70px;
+            width: 70%;
+            color: rgb(249, 242, 242);
+            font-size: 1rem;
+        }
+        input[type='button']{
+            border: none;
+            width: 79%;
+            background-color: rgb(211, 13, 13);
+            color:#ffff;
+            border-radius: 5px;
+
+        }
+        input[type='button']:hover{
+            background-color: rgb(185, 10, 10);
+        }
+        input[type='text'],input[type='password']{
+            background: transparent;
+            border: 1px rgb(52,52,52,0.2) solid;
+
+        }
+        ::placeholder{
+            color: gray;
+            font-size: 1rem;
+
+        }
+        input:focus{
+            outline: none;
+        }
+        .check{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            right: 100px;
+            gap: 10px;
+            input{
+                width: unset;
+            }
+        }
+        a{
+
+            color: #ffff;
+        }
+    }
+}
